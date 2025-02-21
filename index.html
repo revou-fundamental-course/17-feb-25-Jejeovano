@@ -1,20 +1,180 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
 
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/6afe6191fa.js" crossorigin="anonymous"></script>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <!-- Logo Company -->
+        <a href=""><div class="logo-company"></div></a>
+
         <nav>
-
+            <a href="" class="no-border-radius-right">Home</a>
+            <a href="#our-package-section" class="no-border-radius">Our Facilities</a>
+            <a href="#call-us-section" class="no-border-radius-left">Call Us</a>
         </nav>
+    </header>
+
+    <hr/>
+
+    <!-- Main Content -->
+    <main>
         <header>
-
+            <h1>Header</h1>
+            <h4>title<br/><sup>subtitle</sup></h4>
         </header>
-        <main>
 
-        </main>
-        <footer>
+        <section class="main-content">
+            <!-- Banner Autoslide -->
+            <aside class="main-container">
+                <p>Banner Autoslide</p>
+            </aside>
+
+            <!-- Form Contact Us -->
+            <aside class="main-container" style="display:flex;flex-direction: column;">
+                <h2 style="margin-bottom: 0px;margin-top: 0px;">Contact Us</h2>
+                <p style="margin-top: 0px;">Our staff will contact you ASAP! Thank you!</p>
+                <label>Full Name:</label>
+                <input type="text" id="txtFullName" name="txtFullName" placeholder="Full Name" required/>
+                <label>WhatsApp Number:</label>
+                <input type="number" maxlength="15" minlength="10" id="txtPhone" name="txtPhone" placeholder="WhatsApp Number" required/>
+                <label>Interested in:</label>
+                <div style="flex-direction: row;">
+                    <input type="radio" id="rba" name="rbType" />a 
+                    <input type="radio" id="rbb" name="rbType"/>b
+                </div>
+                <label>Estimated Date in:</label>
+                <input type="date" id="txtDate" name="txtDate" required />
+                <button type="button" onclick="alert('Your request sent!')">Send</button>
+            </aside>
+        </section>
+
+        <!-- Our Packages Section -->
+        <section id="our-package-section">
+            <header>
+                <h2>Our Facilities</h2>
+            </header>
             
-        </footer>
-    </body>
+            <article style="display: flex; flex-direction: row;justify-content: space-around;">
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div style="display: flex;flex:1;align-items: center;">
+                        <a>Spring Bed 160x200</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div style="display: flex;flex:1;align-items: center;">
+                        <a>Spring Bed 160x200</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div style="display: flex;flex:1;align-items: center;">
+                        <a>Spring Bed 160x200</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div style="display: flex;flex:1;align-items: center;">
+                        <a>Spring Bed 160x200</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div style="display: flex;flex:1;align-items: center;">
+                        <a>Spring Bed 160x200</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div style="display: flex;flex:1;align-items: center;">
+                        <a>Spring Bed 160x200</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Call Us Section -->
+        <section id="call-us-section">
+            <header>
+                <h2>Call Us</h2>
+            </header>
+
+            <!-- Content Call Us Packages -->
+            <article class="call-us-content" style="display: flex; flex-direction: row;justify-content: space-around;">
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div style="display: flex;flex:2;align-items: center;">
+                        <a href="">@</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div style="display: flex;flex:2;align-items: center;">
+                        <a href="">+62</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div style="display: flex;flex:2;align-items: center;">
+                        <a href="">Facebook</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div style="display: flex;flex:2;align-items: center;">
+                        <a href="">X</a>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div style="display: flex;flex:2;align-items: center;">
+                        <a href="">Website</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <hr/>
+
+    <!-- Footer -->
+    <footer>
+        <p>RevoU Fundamental Course Software Engineering 17 Feb 2025</p>
+        <p>Made on 2025</p>
+    </footer>
+</body>
+
 </html>
