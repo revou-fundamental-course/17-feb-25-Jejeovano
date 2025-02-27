@@ -61,6 +61,8 @@ main>header {
     flex: 1;
     /* align-content: center; */
     /* text-align: center; */
+    display: flex;
+    flex-direction: column;
 }
 
 #our-package-section>header {
@@ -117,6 +119,7 @@ input[type=number] {
 
 img {
     vertical-align: middle;
+    /* width: auto; */
 }
 
 /* Slideshow container */
@@ -182,4 +185,23 @@ img {
     .text {
         font-size: 11px
     }
+}
+
+@media only screen and (max-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
 }

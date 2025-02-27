@@ -37,27 +37,25 @@
 
         <section class="main-content">
             <!-- Banner Autoslide -->
-            <aside class="main-container">
+            <aside class="main-container" >
                 <div class="slideshow-container">
-                
                     <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="/assets/banner/Screenshot 2025-02-21 124510.png" style="width:100%" width="400px" height="400px">
+                        <!-- <div class="numbertext">1 / 3</div> -->
+                        <img src="/assets/banner/Screenshot 2025-02-21 124510.png" height="400px">
                         <!-- <div class="text">Caption Text</div> -->
                     </div>
                 
                     <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="/assets/banner/Screenshot 2025-02-21 124549.png" style="width:100%" width="400px" height="400px">
+                        <!-- <div class="numbertext">2 / 3</div> -->
+                        <img src="/assets/banner/Screenshot 2025-02-21 124549.png" height="400px">
                         <!-- <div class="text">Caption Two</div> -->
                     </div>
                 
                     <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="/assets/banner/Screenshot 2025-02-21 124602.png" style="width:100%" width="400px" height="400px">
+                        <!-- <div class="numbertext">3 / 3</div> -->
+                        <img src="/assets/banner/Screenshot 2025-02-21 124602.png" height="400px">
                         <!-- <div class="text">Caption Three</div> -->
                     </div>
-                
                 </div>
                 
                 <div style="text-align:center">
@@ -68,22 +66,24 @@
             </aside>
 
             <!-- Form Contact Us -->
-            <aside class="main-container" style="display:flex;flex-direction: column;">
-                <h2 style="margin-bottom: 0px;margin-top: 0px;">Contact Us</h2>
-                <p style="margin-top: 0px;">Our staff will contact you ASAP! Thank you!</p>
-                <label>Full Name <a style="color:red;">*</a>:</label>
-                <input type="text" id="txtFullName" name="txtFullName" placeholder="Full Name" required/>
-                <label>WhatsApp Number <a style="color:red;">*</a>:</label>
-                <input type="number" maxlength="15" minlength="10" id="txtPhone" name="txtPhone" placeholder="WhatsApp Number" oninput=checkNum(this); required/>
-                <label>Interested in:</label>
-                <div style="flex-direction: row;">
-                    <input type="radio" id="rba" name="rbType" checked/>a 
-                    <input type="radio" id="rbb" name="rbType"/>b
-                </div>
-                <label>Estimated Date in <a style="color:red;">*</a>:</label>
-                <input type="date" id="txtDate" name="txtDate" onkeydown="alert('Choose date using calendar.\nIf calendar not showing, please use another browser!');return false;" required/>
-                <button type="button" id="btnSubmit" name="btnSubmit">Send</button>
-            </aside>
+            <form>
+                <aside class="main-container">
+                    <h2 style="margin-bottom: 0px;margin-top: 0px;">Contact Us</h2>
+                    <p style="margin-top: 0px;">Our staff will contact you ASAP! Thank you!</p>
+                    <label>Full Name <a style="color:red;">*</a>:</label>
+                    <input type="text" id="txtFullName" name="txtFullName" placeholder="Full Name" required/>
+                    <label>WhatsApp Number <a style="color:red;">*</a>:</label>
+                    <input type="number" maxlength="15" minlength="10" id="txtPhone" name="txtPhone" placeholder="WhatsApp Number" oninput=checkNum(this); required/>
+                    <label>Interested in:</label>
+                    <div style="flex-direction: row;">
+                        <input type="radio" id="rba" name="rbType" checked/>a 
+                        <input type="radio" id="rbb" name="rbType"/>b
+                    </div>
+                    <label>Estimated Date in <a style="color:red;">*</a>:</label>
+                    <input type="date" id="txtDate" name="txtDate" onkeydown="alert('Choose date using calendar.\nIf calendar not showing, please use another browser!');return false;" required/>
+                    <button type="button" id="btnSubmit" name="btnSubmit">Send</button>
+                </aside>
+            </form>
         </section>
 
         <!-- Our Packages Section -->
@@ -127,7 +127,24 @@
                 </div>
             </article>
         </section>
+        <!-- Call Us Section -->
+        <section id="call-us-section">
+            <header>
+                <h2>Our Rate</h2>
+            </header>
 
+            <!-- Content Call Us Packages -->
+            <article class="call-us-content" style="display: flex; flex-direction: row;justify-content: space-around;">
+                <aside class="main-container">
+
+                </aside>
+                
+                <!-- Form Contact Us -->
+                <aside class="main-container" style="display:flex;flex-direction: column;">
+                    
+                </aside>
+            </article>
+        </section>
         <!-- Call Us Section -->
         <section id="call-us-section">
             <header>
