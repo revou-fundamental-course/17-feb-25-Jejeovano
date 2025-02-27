@@ -1,3 +1,4 @@
+// get date today
 var year=new Date().getFullYear();
 var month=("0" + (new Date().getMonth()+1)).slice(-2);
 var date = ("0" + new Date().getDate()).slice(-2);
@@ -5,8 +6,8 @@ document.getElementById('txtDate').min = year+"-"+month+"-"+date;
 document.getElementById('txtDate').max = (year+1)+"-12-31";
 document.getElementById('txtDate').value = year+"-"+month+"-"+date;
 
+// checker input value
 function checkNum(elem){
-    // console.log(elem.id);
     if((elem.value.toString()).length>0){
         if(!isNumeric(elem.value)){
             alert(elem.placeholder+" Invalid!");
@@ -21,13 +22,15 @@ function checkNum(elem){
     }
 }
 
+// Checker nuumber input only
 function isNumeric(value) {
     return /^-?\d+$/.test(value);
 }
 
-document.getElementById('btnSubmit').addEventListener("click",function(){
+// Form Validation
+document.getElementById('btnSubmit').addEventListener("click",validationForm);
+function validationForm(){
     var nama = document.getElementById("txtFullName");
-    // var kode = document.getElementById("txtKodeNegara").value;
     var nowa = document.getElementById("txtPhone");
     var boolnama = false;
     var boolnowa = false;
@@ -50,11 +53,11 @@ document.getElementById('btnSubmit').addEventListener("click",function(){
         // kode="";
         document.getElementById("txtPhone").value="";
     }
-},false);
+}
 
+// slide show image
 let slideIndex = 0;
 showSlides();
-
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("mySlides");

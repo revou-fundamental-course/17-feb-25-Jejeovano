@@ -8,21 +8,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <style>
-        
-    </style>
+    <script src="https://kit.fontawesome.com/6afe6191fa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script src="https://kit.fontawesome.com/6afe6191fa.js" crossorigin="anonymous"></script>
     <!-- Header & Navigation -->
     <header class="main-header">
         <!-- Logo Company -->
         <a href=""><div class="logo-company"></div></a>
         <nav>
             <a href="" class="no-border-radius-right">Home</a>
-            <a href="#our-package-section" class="no-border-radius">Our Facilities</a>
-            <a href="#call-us-section" class="no-border-radius-left">Call Us</a>
+            <a class="no-border-radius" onclick="window.scrollTo({ top: document.getElementById('our-facility-section').offsetTop, behavior: 'smooth'});">Our Facilities</a>
+            <a class="no-border-radius" onclick="window.scrollTo({ top: document.getElementById('our-location-section').offsetTop, behavior: 'smooth'});">Our Location</a>
+            <a class="no-border-radius-left" onclick="window.scrollTo({ top: document.getElementById('our-review-section').offsetTop, behavior: 'smooth'});">Our Review</a>
         </nav>
     </header>
 
@@ -31,8 +29,9 @@
     <!-- Main Content -->
     <main>
         <header>
-            <h1>Header</h1>
-            <h4>title<br/><sup>subtitle</sup></h4>
+            <h1>Homestay Villa Tidar</h1>
+            <h3>Kost Exclusive & Homestay</h3>
+            <h5>a.k.a RedDoorz near Ma Chung / OYO 3861 Homestay Villa Tidar <a class="req">(No Longer Partnership)</a></h5>
         </header>
 
         <section class="main-content">
@@ -40,21 +39,13 @@
             <aside class="main-container" >
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                        <!-- <div class="numbertext">1 / 3</div> -->
-                        <img src="/assets/banner/Screenshot 2025-02-21 124510.png" height="400px">
-                        <!-- <div class="text">Caption Text</div> -->
+                        <img src="/assets/banner/1.webp" class="responsive">
                     </div>
-                
                     <div class="mySlides fade">
-                        <!-- <div class="numbertext">2 / 3</div> -->
-                        <img src="/assets/banner/Screenshot 2025-02-21 124549.png" height="400px">
-                        <!-- <div class="text">Caption Two</div> -->
+                        <img src="/assets/banner/6.webp" class="responsive">
                     </div>
-                
                     <div class="mySlides fade">
-                        <!-- <div class="numbertext">3 / 3</div> -->
-                        <img src="/assets/banner/Screenshot 2025-02-21 124602.png" height="400px">
-                        <!-- <div class="text">Caption Three</div> -->
+                        <img src="/assets/banner/7.webp" class="responsive">
                     </div>
                 </div>
                 
@@ -66,132 +57,98 @@
             </aside>
 
             <!-- Form Contact Us -->
-            <form>
-                <aside class="main-container">
-                    <h2 style="margin-bottom: 0px;margin-top: 0px;">Contact Us</h2>
-                    <p style="margin-top: 0px;">Our staff will contact you ASAP! Thank you!</p>
-                    <label>Full Name <a style="color:red;">*</a>:</label>
+            <aside class="main-container">
+                <h2>Contact Us</h2>
+                <p>Our staff will contact you ASAP! Thank you!</p>
+                <form>
+                    <label>Full Name <a class="req">*</a>:</label>
                     <input type="text" id="txtFullName" name="txtFullName" placeholder="Full Name" required/>
-                    <label>WhatsApp Number <a style="color:red;">*</a>:</label>
+                    <label>WhatsApp Number <a class="req">*</a>:</label>
                     <input type="number" maxlength="15" minlength="10" id="txtPhone" name="txtPhone" placeholder="WhatsApp Number" oninput=checkNum(this); required/>
                     <label>Interested in:</label>
-                    <div style="flex-direction: row;">
-                        <input type="radio" id="rba" name="rbType" checked/>a 
-                        <input type="radio" id="rbb" name="rbType"/>b
+                    <div id="rbType">
+                        <input type="radio" id="rbKost" name="rbType" checked/>Kost 
+                        <input type="radio" id="rbHomestay" name="rbType"/>Homestay
                     </div>
-                    <label>Estimated Date in <a style="color:red;">*</a>:</label>
+                    <label>Estimated Date in <a class="req">*</a>:</label>
                     <input type="date" id="txtDate" name="txtDate" onkeydown="alert('Choose date using calendar.\nIf calendar not showing, please use another browser!');return false;" required/>
                     <button type="button" id="btnSubmit" name="btnSubmit">Send</button>
-                </aside>
-            </form>
+                </form>
+            </aside>
         </section>
 
         <!-- Our Packages Section -->
-        <section id="our-package-section">
+        <section id="our-facility-section">
             <header>
                 <h2>Our Facilities</h2>
             </header>
-            
-            <article style="display: flex; flex-direction: row;justify-content: space-around;">
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-solid fa-bed"></i>
-                    </div>
-                    <div style="display: flex;flex:1;align-items: center;">
-                        <a>Spring Bed 160x200</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-solid fa-bed"></i>
-                    </div>
-                    <div style="display: flex;flex:1;align-items: center;">
-                        <a>Spring Bed 160x200</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-solid fa-bed"></i>
-                    </div>
-                    <div style="display: flex;flex:1;align-items: center;">
-                        <a>Spring Bed 160x200</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-solid fa-bed"></i>
-                    </div>
-                    <div style="display: flex;flex:1;align-items: center;">
-                        <a>Spring Bed 160x200</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- Call Us Section -->
-        <section id="call-us-section">
-            <header>
-                <h2>Our Rate</h2>
-            </header>
-
-            <!-- Content Call Us Packages -->
-            <article class="call-us-content" style="display: flex; flex-direction: row;justify-content: space-around;">
-                <aside class="main-container">
+            <section id="our-facility-content">
+                <aside class="our-facility-container" style="border:1px solid black; height: 400px;">
 
                 </aside>
-                
-                <!-- Form Contact Us -->
-                <aside class="main-container" style="display:flex;flex-direction: column;">
+
+                <aside class="our-facility-container" style="border:1px solid black; height: 400px;">
                     
                 </aside>
-            </article>
+            </section>
         </section>
-        <!-- Call Us Section -->
-        <section id="call-us-section">
+        <!-- Our Packages Section -->
+        <section id="our-location-section">
             <header>
-                <h2>Call Us</h2>
+                <h2>Our Location</h2>
             </header>
+            <section id="our-location-content">
+                <aside class="our-facility-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.8505767524024!2d112.58868333144018!3d-7.957310430892363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788289abf808bf%3A0x14440f215bfcc022!2sHomestay%20Villa%20Tidar!5e0!3m2!1sen!2sid!4v1740667408935!5m2!1sen!2sid"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <article style="display: flex; flex-direction: row;justify-content: space-around; width: 100%;">
+                        <div style="display: flex;flex-direction: row;">
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <i class="fa-brands fa-whatsapp"></i>&nbsp;
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <a href="https://wa.me/62819864824/" target="_blank" title="WhatsApp">WhatsApp Chat Only</a>
+                            </div>
+                        </div>
+                        <div style="display: flex;flex-direction: row;">
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <i class="fa-solid fa-map-location-dot"></i></i>&nbsp;
+                            </div>
+                            <div style="display: flex;align-items: center;">
+                                <a href="https://bit.ly/mapsHVPT" target="_blank" title="Google Maps">Perumahan Villa Puncak Tidar N-12, Malang, Jawa Timur</a>
+                            </div>
+                        </div>
+                        <div style="display: flex;flex-direction: row;">
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <i class="fa-brands fa-instagram"></i>&nbsp;
+                            </div>
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <a href="https://instagram.com/kost.malang_" target="_blank" title="Instagram">kost.malang_</a>
+                            </div>
+                        </div>
+                    </article>
+                </aside>
 
-            <!-- Content Call Us Packages -->
-            <article class="call-us-content" style="display: flex; flex-direction: row;justify-content: space-around;">
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-brands fa-instagram"></i>&nbsp;
-                    </div>
-                    <div style="display: flex;flex:2;justify-content: center;align-items: center;">
-                        <a href="">@</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-solid fa-phone"></i>&nbsp;
-                    </div>
-                    <div style="display: flex;flex:2;align-items: center;">
-                        <a href="">+62</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-brands fa-facebook"></i>&nbsp;
-                    </div>
-                    <div style="display: flex;flex:2;align-items: center;">
-                        <a href="">Facebook</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-brands fa-x-twitter"></i>&nbsp;
-                    </div>
-                    <div style="display: flex;flex:2;align-items: center;">
-                        <a href="">X</a>
-                    </div>
-                </div>
-                <div style="display: flex;flex-direction: row;">
-                    <div style="display: flex;flex:1;justify-content: center;align-items: center;">
-                        <i class="fa-solid fa-globe"></i>&nbsp;
-                    </div>
-                    <div style="display: flex;flex:2;align-items: center;">
-                        <a href="">Website</a>
-                    </div>
+                <!-- <aside class="our-facility-container">
+                    
+                </aside> -->
+            </section>
+        </section>
+
+        <section id="our-review-section">
+            <header>
+                <h2>Our Review</h2>
+            </header>
+            <article>
+                <div class="scroll-container">
+                    <img src="/assets/review/Agoda Rating 2.png" alt="Agoda Rating" width="75%">
+                    <img src="/assets/review/Agoda Rating.png" alt="Agoda Rating" width="75%">
+                    <img src="/assets/review/planetofhotels Rating.png" alt="Planet of Hotels Rating" width="75%">
+                    <img src="/assets/review/readytotrip Rating.png" alt="Ready to Trip Rating" width="75%">
+                    <img src="/assets/review/Traveloka Rating.png" alt="Traveloka Rating" width="75%">
+                    <img src="/assets/review/Trivago Rating.png" alt="Trivago Rating" width="75%">
                 </div>
             </article>
         </section>
@@ -201,8 +158,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>RevoU Fundamental Course Software Engineering 17 Feb 2025</p>
-        <p>Made on 2025</p>
+        <p>Homestay Villa Tidar 2025</p>
     </footer>
 </body>
 <script src="/js/script.js"></script>
